@@ -1,0 +1,363 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    font-family: 'New Rocker';
+}
+ body::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.9), rgba(199, 45, 242, 0.65)), url('../img/banner.png');
+    background-size: cover;/* responsividade do backgroud */
+    background-position: center;
+    min-height: 450px;
+    padding-top:20px ;  
+}
+.menu-topo{
+    margin-left:5px;
+}
+.container{
+    max-width: 1400px ;
+    padding: 0 2%;
+    margin:0 auto;
+}
+span{
+    font-family: 'UnifrakturMaguntia';
+    color: #ffee00 ;
+}
+.logo{
+    position: relative;
+    background-image:  url("../img/figma.jpeg");
+    background-position:cover ;
+    background-size: 100% 100%;
+    width: 100px;
+    height:80px;
+    float:left;
+    border-radius: 28px ;
+    border: 1.6px solid white;
+    box-shadow: 0 0 6px 6px #8360A6;
+}
+.container .menu-topo{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+nav.desktop{
+    float: right;
+}
+nav.desktop ul{
+    list-style-type: none;
+    padding-top:20px;
+
+}
+nav.desktop li{
+    display: inline-block;
+    margin:5px;
+
+}
+nav.desktop a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+}
+nav.desktop .monte{
+    color: rgb(255, 255, 255);
+}
+nav li{
+    background-color:#ffee00 ;
+    padding: 3px 8px;
+    border-radius:20px;
+    border:2px solid black;
+    transition: 0.3s;
+}
+nav li.bnt_orcamento{
+    background-color:#8360A6;
+    padding: 3px 8px;
+    border-radius:200px;
+    border:3px solid black;
+    box-shadow: 0 0 4px 4px white;
+   transition: 0.3s;
+}
+nav li:hover{
+    transform: translateX(.5%) scale(1.1);
+    
+}
+div.chamada{
+    padding: 130px 0;
+    width: 70%;
+}
+div.chamada h2{
+    font-size: 40px;
+    color:aliceblue;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+div.chamada p{
+    font-size: 17px;
+    color:aliceblue;
+}
+div.chamada form{
+    margin-top: 25px;
+}
+div.chamada input[type=email]{
+    width: 160px;
+    height: 30px;
+    border-radius: 100px;
+    border:0;
+    padding-left: 13px;
+}
+
+div.chamada input[type=submit]{
+    border-radius: 80px;
+    width: 160px;
+    height: 30px;
+}
+.sessao1{
+    text-align: center;
+    padding: 30px 0;
+    background-color:black;
+}
+.desc-produto{
+    padding: 0 15px;
+    float:left; 
+    width: 60%;
+}
+.clear{
+    clear: both;
+}
+.desc-produto h3{
+
+    color:#8360A6;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+.desc-produto p{
+    color: #ffee00 ;
+    font-size: 18px;
+    line-height: 27px;
+}
+.sessao1 img{
+    width: 40%;
+    max-width: 500px;
+    border: 2px solid white;
+
+}
+.sessao2 > .container{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    background-image: url("../img/cchorao.png");
+    background-size: cover;
+    position: relative;
+    max-width: 1000px;
+    min-height: 350px;
+    border: 2px solid white;
+}
+.feedback{
+    position: absolute;
+    left: 50%;
+    width: 70%;
+    background-color: black;
+    bottom: 30px;
+    max-width: 500px;
+    padding: 50px;
+    box-shadow:  0 9px 20px 0 rgba(255, 255, 255, 0.9);
+    margin-left: 20px;
+
+}
+.feedback p{
+    color:white;
+    font-size: 19px;
+    font-weight: bold;
+}
+#sessao3{
+    margin-top: 50px;
+    text-align: center;
+}
+#sessao3 h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+    text-decoration:line-through;
+    margin-bottom: 3%;
+    
+}
+#sessao3 article{
+   width: 27%;
+   margin: 2.5% 3%;
+   text-align: center;
+   background-color:rgb(155, 155, 155);
+   border-radius: 10px;
+   padding-bottom: 50px;
+}
+#sessao3 article img{
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+   border: 2px solid #000000;
+}
+#sessao3 article .texto_bnt{
+    padding: 0 5px;
+    height: 100px;
+}
+#sessao3 article a{
+    text-decoration: none;
+}
+#sessao3 > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bnt_explorar{
+    background-color: #8360A6;
+    width: 40%;
+    margin: auto;
+    border-radius:20px ;
+    border: 3px solid black;
+    height: 15%;
+    text-align: center;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    
+}
+
+.bnt_explorar:hover{
+    transform: translateX(.5%) scale(1.1);
+    background-color: #ffee00;
+    
+}
+.bnt_explorar p{
+    margin-top: 2px;
+    position: relative;
+}
+
+.sessao4 > .container{
+    display: flex;
+    
+}
+.sessao4{
+    text-align: center;
+}
+.sessao4 article{
+    width: 12%;
+    background-color:rgb(155, 155, 155);
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 50px ;
+}
+.sessao4 article img{
+    width: 50%;
+}
+.parceiros{
+    text-align: center;
+    margin-bottom:50px ;
+    margin-top: 125px ;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+
+/* SHAPES */
+header.shapes{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.9), rgba(199, 45, 242, 0.65)), url('../img/shapez.jpg');
+
+}
+header.truck{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.9), rgba(199, 45, 242, 0.65)), url('../img/wallpaper_shapes.jpg');
+}
+header.rolamentos{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.9), rgba(199, 45, 242, 0.65)), url('../img/rolamento-simples-barato.jpg');
+}
+.produtos{
+    margin-top: 2%;
+}
+.produtos article{
+    background-color:rgb(155, 155, 155);
+    width: 30%;
+    height: 600px;
+    margin: 2% 1% 8% 1%;
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+}
+.chamada .produto-categ{
+    margin-top: 4%;
+    font-size: 80px;
+    
+}
+.produtos .texto_produtos{
+    
+    height: 170px;
+    width: 80%;
+    margin: 0 auto ;
+    padding: 40px;
+}
+.texto_produtos h3{
+    padding-bottom:15px ;
+    text-transform: uppercase;
+}
+.produtos article img{
+    height: 50%;
+    margin-top: 5%;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.produtos > .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+.bnt_compra{
+    margin: 0 auto;
+    width: 40%;
+    height: 6%;
+    background-color: #8360A6;
+    border-radius:20px ;
+    box-shadow: 0 0 4px 4px rgb(0, 0, 0);
+    cursor: pointer;
+    transition: .2s;
+}
+.bnt_compra p{
+    padding: 5% 10px;
+    
+}
+.bnt_compra:hover{
+    transform: translateX(.5%) scale(110%);
+    box-shadow:   0 0 4px 4px rgba(255, 255, 255, 0.9);
+    border: 2px solid black;
+}
+footer{
+    width: 100%;
+    height: 170px;
+    background-color: #8360A6;
+    align-items: center;
+}
+#contato{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+#contato h4{
+    padding-top: 20px;
+    font-size: 25px;
+    text-decoration:underline;
+    text-transform: uppercase;
+}
+#contato p{
+    font-size:17px ;
+    padding-bottom: 4px;
+}
